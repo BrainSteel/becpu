@@ -1,0 +1,50 @@
+12
+
+0
+{
+    LDA 0xFFF;
+    STA 0x005;
+    LDA 0xA00;
+    STA 0x009;
+    JMP 0xB00;
+}
+
+0xA00
+{
+    2;
+}
+
+0xB00
+{
+    JMP 0xD00;
+    JMP 0xC00;
+}
+
+0xC00
+{
+    LDA 0xFFD;
+    OUT;
+    HLT;
+}
+
+0xD00
+{
+    LDA 0xFFF;
+    SUB 0xE00;
+    STA 0xFFF;
+    LDA 0xFFD;
+    ADD 0xFFE;
+    STA 0xFFD;
+    JMP 0;
+}
+
+0xE00
+{
+    1;
+}
+
+0xFFE
+{
+    10;
+    15;
+}

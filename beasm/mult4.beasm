@@ -1,0 +1,21 @@
+4
+
+0
+{
+    LDA 0x4;
+    SUB 0xF;
+    STA 0x4;
+    LDI 0;
+    JMP 0xC;
+    ADD 0xE;
+    ADD 0xE;
+    ADD 0xE;
+    ADD 0xE;
+    ADD 0xE;
+    ADD 0xE;
+    ADD 0xE;
+    OUT;
+    HLT;
+    20;
+    7;
+}
